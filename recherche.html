@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+ <title>Imeen IBS</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Imeen<span class="logo_colour"> Ben Salah</span></a></h1>
+          <h2>Docteure de l'Université de Rouen</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+
+         <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="index.html">ACCUEIL</a></li>
+          <li class="selected"><a href="recherche.html">RECHERCHE</a></li>
+          <li><a href="Enseignement.html">ENSEIGNEMENT</a></li>
+          <li><a href="publication.html">PUBLICATIONS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        
+        <h3>Liens utiles</h3>
+        <ul>
+          <li><a href="https://github.com/getify/You-Dont-Know-JS/">Livres JS</a></li>
+          <li><a href="http://jsforcats.com">JS pour les chats</a></li>
+          <li><a href="https://getbootstrap.com/docs/4.2/getting-started/introduction/">Documentation Bootstrap</a></li>
+          <li><a href="https://www.php.net/manual/fr/index.php">PHP</a></li>
+        </ul>
+        <h3>Chercher</h3>
+        <form method="post" action="#" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="Mot clé....." />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+          </p>
+        </form>
+      </div>
+      <div id="content">
+	  
+	  
+	 
+        <!-- insert the page content here -->
+		
+		<h2>RECHERCHE</h2>
+		
+		
+		
+		<p>Ma thèse se place dans le cadre d'un projet ANR intitulé plaTINUM (Cartographie Long Terme pour
+la Navigation Urbaine) lié à la navigation autonome et à la génération de cartes pour la navigation
+basée perception. L'objectif de ma thèse est de développer une nouvelle méthode pour résumer une carte 3D et d'extraire un graphe de navigabilité. Les nœuds de ce graphe sont des images sphériques augmentées et semantisées RGBD-L facilitant l’utilisation de cette carte par des systèmes de navigation à ressources matérielles limitées.
+
+<a href="https://hal.archives-ouvertes.fr/tel-02419559v1">Lien</a>
+<div class="row">
+  <div class="column">
+    <img src="style/plat.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="style/ign.png" alt="Forest" style="width:100%">
+  </div>
+  
+</div>
+	</p>	
+	<p>	<h5>Résumé</h5>
+ Les caméras sont devenues de plus en plus communes dans les véhicules, les smartphones et les systèmes d'aide à la conduite ADAS (Advanced Driver Assistance Systèmes). Les domaines d'application de ces caméras dans le monde des systèmes intelligents de transport deviennent de plus en plus variés : la détection des piétons, les avertissements de franchissement de ligne, la navigation... La navigation basée sur la vision a atteint une certaine maturité durant ces dernières années grâce à l'utilisation de technologies avancées. Les systèmes de navigation basée sur la vision ont le considérable avantage de pouvoir utiliser directement les informations visuelles présentes dans l'environnement, sans devoir adapter le moindre élément de l'infrastructure. De plus, contrairement aux systèmes utilisant le GPS, ils peuvent être utilisés à l'extérieur ainsi qu'à l'intérieur des locaux et des bâtiments sans aucune perte de précision. C'est pour ces raisons que les systèmes basés sur la vision sont une bonne option car ils fournissent des informations très riches et précises sur l'environnement, qui peuvent être utilisées pour la navigation. Un axe important de recherche porte actuellement sur la cartographie qui représente une étape indispensable pour la navigation. Cette étape engendre une problématique de la gestion de la mémoire assez conséquente requise par ces systèmes en raison de la quantité d'informations importante collectées par chaque capteur. En effet, l'espace mémoire nécessaire pour accueillir la carte d'une petite ville se mesure en dizaines de GO voire des milliers lorsque l'on souhaite couvrir des espaces de grandes dimensions. Cela rend impossible son intégration dans un système mobile tel que les smartphones, les véhicules, les vélos ou les robots. Le défi serait donc de développer de nouveaux algorithmes permettant de diminuer au maximum la taille de la mémoire nécessaire pour faire fonctionner ce système de localisation par vision. C'est dans ce contexte que se situe notre projet qui consiste à développer un nouveau système capable de résumer une carte 3D qui contient des informations visuelles collectées par plusieurs capteurs. Le résumé sera un ensemble des vues sphériques permettant de garder le même niveau de visibilité dans toutes les directions. Cela permettrait aussi de garantir, à moindre coût, un bon niveau de précision et de rapidité lors de la navigation. La carte résumant l'environnement sera constituée d'un ensemble d'informations géométriques, photométriques et sémantiques.
+      
+	  </p>
+	  </div>
+    </div>
+    <div id="footer">
+      Copyright &copy; imeenIBS 
+  </div>
+</body>
+</html>
