@@ -96,9 +96,17 @@ Le language HTML structure les données, le CSS stylise ces données pour les re
 		</p>
 
 	<p class="text-justify">Une page minimale utilisant Bootstrap ressemble à ceci :</p>
-					<pre data-src="data/bootstrap_minimal.html" data-download-link data-download-link-label="Télécharger"></pre>
+					<pre class="prettyprint"><code><span class="tag">&lt;script&gt;</span><span class="pln">
+  </span><span class="kwd">function</span><span class="pln"> handleLoad</span><span class="pun">(</span><span class="pln">e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">'Loaded import: '</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> e</span><span class="pun">.</span><span class="pln">target</span><span class="pun">.</span><span class="pln">href</span><span class="pun">);</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+  </span><span class="kwd">function</span><span class="pln"> handleError</span><span class="pun">(</span><span class="pln">e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">'Error loading import: '</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> e</span><span class="pun">.</span><span class="pln">target</span><span class="pun">.</span><span class="pln">href</span><span class="pun">);</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="tag">&lt;/script&gt;</span><span class="pln">
 
-					<p class="text-justify">Et avec une barre de navigation : </p>
+</span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"import"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"file.html"</span><span class="pln">
+      </span><span class="atn">onload</span><span class="pun">=</span><span class="atv">"</span><span class="pln">handleLoad</span><span class="pun">(</span><span class="pln">event</span><span class="pun">)</span><span class="atv">"</span><span class="pln"> </span><span class="atn">onerror</span><span class="pun">=</span><span class="atv">"</span><span class="pln">handleError</span><span class="pun">(</span><span class="pln">event</span><span class="pun">)</span><span class="atv">"</span><span class="tag">&gt;</span></code></pre>
 
 	</li>
 
